@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admissions - Radiant Public School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+        /* Navbar */
+    header {
+      background-color: #3d5afe;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .logo {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+
+    .banner {
+      background: url('https://saraswatiglobalschool.com/assets/images/innerbanner.jpg') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #3d5afe;
+    }
+    .section ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Admission Form */
+    .admission-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .admission-form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .admission-form form input,
+    .admission-form form select,
+    .admission-form form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1rem;
+      width: 100%;
+    }
+    .admission-form form textarea {
+      grid-column: span 2;
+      resize: vertical;
+    }
+    .form-btn {
+      grid-column: span 2;
+      text-align: center;
+    }
+    .form-btn button {
+      padding: 0.8rem 2rem;
+      background: #ff9800;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .form-btn button:hover {
+      background: #e68900;
+    }
+
+    footer {
+      background: #212121;
+      color: white;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+         nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .admission-form form {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <header>
+    <div class="logo">Radiant Public School</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Admissions Open for 2025–26</h1>
+  </div>
+
+  <!-- Process Section -->
+  <section class="section">
+    <h2>Admission Process</h2>
+    <ul>
+      <li>Fill the online application form.</li>
+      <li>Submit necessary documents.</li>
+      <li>Attend the interaction session (if applicable).</li>
+      <li>Pay the admission fee upon confirmation.</li>
+    </ul>
+
+    <h2>Eligibility</h2>
+    <ul>
+      <li>Nursery: 3+ years</li>
+      <li>Prep: 4+ years</li>
+      <li>Class 1 onwards: As per previous class result</li>
+    </ul>
+
+    <h2>Documents Required</h2>
+    <ul>
+      <li>Birth certificate</li>
+      <li>Previous class report card</li>
+      <li>Passport-sized photographs (2)</li>
+      <li>Aadhar card (student & parent)</li>
+    </ul>
+  </section>
+
+  <!-- Admission Form -->
+  <section class="section admission-form">
+    <h2>Apply Online</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <select>
+        <option selected disabled>Class Applying For</option>
+        <option>Nursery</option>
+        <option>Prep</option>
+        <option>Class 1</option>
+        <option>Class 2</option>
+        <option>Class 3+</option>
+      </select>
+      <input type="text" placeholder="City" />
+      <textarea rows="4" placeholder="Any message or query..."></textarea>
+      <div class="form-btn">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      &copy; 2025 Radiant Public School. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

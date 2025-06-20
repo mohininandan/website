@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics - Radiant Public School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #3d5afe;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-weight: bold; font-size: 1.5rem; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      background: url('https://saraswatiglobalschool.com/assets/images/innerbanner.jpg') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #3d5afe;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    /* Facilities */
+    .facilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .facility {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .facility i {
+      font-size: 2.5rem;
+      color: #3d5afe;
+      margin-bottom: 1rem;
+    }
+
+    .facility:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #212121;
+      color: white;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      
+    }
+
+     
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Radiant Public School</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics">Academics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>World-Class Academics</h1>
+  </div>
+
+  <!-- Facilities Section -->
+  <section class="section">
+    <h2>Facilities We Offer</h2>
+    <div class="facilities">
+      <div class="facility">
+        <i class="fas fa-flask"></i>
+        <h3>Science Labs</h3>
+        <p>Modern labs for Physics, Chemistry, and Biology with latest equipment.</p>
+      </div>
+      <div class="facility">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Smart Classrooms</h3>
+        <p>Digital boards, interactive content, and real-time assessments.</p>
+      </div>
+      <div class="facility">
+        <i class="fas fa-futbol"></i>
+        <h3>Sports Complex</h3>
+        <p>Football ground, basketball court, skating rink and more.</p>
+      </div>
+      <div class="facility">
+        <i class="fas fa-bus"></i>
+        <h3>Transport</h3>
+        <p>GPS-tracked, safe and supervised transport for all routes.</p>
+      </div>
+      <div class="facility">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Computer Lab</h3>
+        <p>Hi-tech lab with fast internet and up-to-date systems.</p>
+      </div>
+      <div class="facility">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Security</h3>
+        <p>24×7 CCTV surveillance & trained staff for campus safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <h2>Our Campus Gallery</h2>
+    <div class="gallery">
+      <img src="images/img4.jpg" alt="Classroom">
+      <img src="" alt="Science Lab">
+      <img src="" alt="Library">
+      <img src="" alt="Playground">
+      <img src="" alt="Computer Lab">
+      <img src="" alt="Transport">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      &copy; 2025 Radiant Public School. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
